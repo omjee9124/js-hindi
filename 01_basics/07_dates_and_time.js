@@ -14,8 +14,8 @@ const myDate = new Date()
 // console.log(myCreatedDate.toLocaleString())
 
 // let myCreatedDate = new Date("2023-01-15")//YYYY-MM-DD
-let myCreatedDate = new Date("09-22-2025") //,MM-DD-YYYY
-// console.log(myCreatedDate.toLocaleString());
+let myCreatedDate = new Date(2023,10,5,3,50) //,MM-DD-YYYY
+console.log(myCreatedDate.toLocaleString());
 
 let myTimeStamp = Date.now();
 // console.log(myTimeStamp)
@@ -28,6 +28,7 @@ console.log(newDate);
 console.log(newDate.getMonth()+1)
 console.log(newDate.getDay())
 
+
 newDate.toLocaleString('default',{
-    
+    weekday: "long"
 })
