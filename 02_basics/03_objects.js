@@ -14,7 +14,7 @@ const jsUser = {
     email:"good@gmail.com",
     isLoggedIn:true,
     lastLoginDays:["monday","saturday"]
-
+    
 }
 // console.log(jsUser.email);
 // console.log(jsUser["full Name"]);
@@ -23,8 +23,19 @@ const jsUser = {
 // console.log(jsUser["name"])
 
 jsUser.email = "verygood@gmail.com"
-console.log(jsUser.email)
+// console.log(jsUser.email)
 
-Object.freeze(jsUser)
 jsUser.email = "notgodd@gmail.com"//not implemented because of Object.freeze method is called
-console.log(jsUser)
+// console.log(jsUser)
+
+jsUser.greeting = function(){
+    console.log("Hello js user");
+    
+}
+
+jsUser.greetingTwo = function(){
+    console.log(`Hello user ${this["full Name"]}`);
+    
+}
+jsUser.greeting();
+jsUser.greetingTwo()
