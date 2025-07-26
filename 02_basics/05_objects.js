@@ -16,3 +16,16 @@ console.log(teacher);
 //     coursename:"jsinhindi",
 
 // }
+
+//JSON
+// {
+//     "name": "Om Ji Dubey"
+//     "course": "Btech"
+//     "fees": "999"
+// }
+
+[
+    {}
+    {}
+    {}
+]
